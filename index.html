@@ -228,6 +228,10 @@
 
         var array_productos = [];
 
+        if (localStorage.getItem('PRODUCTOS')) {
+            array_productos = JSON.parse(localStorage.getItem('PRODUCTOS')) || [];
+        }
+
         function comprar(id) {
             // alert(id);
             var producto = $('#producto-' + id);
