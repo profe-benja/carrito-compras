@@ -176,27 +176,37 @@
             </div>
          
             <div class="col">
-                <div class="card shadow-sm">
+                <div class="card shadow-sm"
+                    id="producto-2"
+                    data-img="https://jumbo.vtexassets.com/arquivos/ids/473154/Caramelo-Fini-regaliz-frutilla-dulce-80-g.jpg?v=637813228067300000"
+                    data-nombre="TUBOS"
+                    data-precio="2000"
+                >
                     <img class="bd-placeholder-img card-img-top" width="100" src="https://jumbo.vtexassets.com/arquivos/ids/473154/Caramelo-Fini-regaliz-frutilla-dulce-80-g.jpg?v=637813228067300000" alt="" srcset="">
                     <div class="card-body">
-                        <p class="card-text">This  content is a little bit longer.</p>
+                        <p class="card-text">Tubos.</p>
                         <p class="text-danger">$2000</p>
                         <div class="d-grid gap-2">
-                            <button class="btn btn-primary" type="button">Comprar</button>
+                            <button class="btn btn-primary" type="button" onclick="comprar(2)">Comprar</button>
                         </div>
-                        
                     </div>
                 </div>
             </div>
 
             <div class="col">
-                <div class="card shadow-sm">
+                <div class="card shadow-sm"
+                
+                    id="producto-3"
+                    data-img="https://www.latercera.com/resizer/1XWNe_JScgI-KMspd7oZFHWn_9Q=/800x0/smart/cloudfront-us-east-1.images.arcpublishing.com/copesa/XXYOHAKEHRBQHFJFR2BTSREJJI.png"
+                    data-nombre="Mongul"
+                    data-precio="1200"
+                >
                     <img class="bd-placeholder-img card-img-top" width="100px" src="https://www.latercera.com/resizer/1XWNe_JScgI-KMspd7oZFHWn_9Q=/800x0/smart/cloudfront-us-east-1.images.arcpublishing.com/copesa/XXYOHAKEHRBQHFJFR2BTSREJJI.png" alt="" srcset="">
                     <div class="card-body">
-                        <p class="card-text">This  content is a little bit longer.</p>
-                        <p class="text-danger">$1000</p>
+                        <p class="card-text">Mongul.</p>
+                        <p class="text-danger">$1200</p>
                         <div class="d-grid gap-2">
-                            <button class="btn btn-primary" type="button">Comprar</button>
+                            <button class="btn btn-primary" type="button" onclick="comprar(3)">Comprar</button>
                         </div>
                         
                     </div>
@@ -214,7 +224,16 @@
     <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>  
   
 
+    <script>
 
+        function comprar(id) {
+            // alert(id);
+            var producto = $('#producto-' + id);
+
+            console.log(producto.data('precio'));
+        }
+
+    </script>
 
 
 
