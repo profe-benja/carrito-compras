@@ -230,7 +230,14 @@
             // alert(id);
             var producto = $('#producto-' + id);
 
-            console.log(producto.data('precio'));
+            var p = {
+                id: id,
+                img: producto.data('img'),
+                precio: producto.data('precio')
+            };
+
+
+            console.log(p);
         }
 
     </script>
