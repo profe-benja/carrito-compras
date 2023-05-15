@@ -226,6 +226,8 @@
 
     <script>
 
+        var array_productos = [];
+
         function comprar(id) {
             // alert(id);
             var producto = $('#producto-' + id);
@@ -236,8 +238,18 @@
                 precio: producto.data('precio')
             };
 
+            array_productos.push(p);
 
-            console.log(p);
+            console.log(array_productos);
+
+            localStorage.setItem('PRODUCTOS', JSON.stringify(array_productos));
+
+            // localStorage.setItem('RICHARD', JSON.stringify({
+            //     name: 'richard',
+            //     edad: '23',
+            //     status: 'rico millonario',
+            //     profesion: 'informatico'
+            // }));
         }
 
     </script>
